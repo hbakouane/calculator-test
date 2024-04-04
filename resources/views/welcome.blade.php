@@ -45,11 +45,12 @@
                     <div onclick="type(this)" class="number border-b rounded-bl-xl border-r">7</div>
                     <div onclick="type(this)" class="number border-b border-r">8</div>
                     <div onclick="type(this)" class="number border-b border-r rounded-br-xl">9</div>
-                    <div onclick="operate(this)" class="operation rounded-b-xl">x</div>
+                    <div onclick="operate(this)" class="operation border-b ">x</div>
                     <div class="col-span-1"></div>
-                    <div onclick="type(this)" class="col-span-1 number rounded-b border-x">0</div>
+                    <div onclick="type(this)" class="col-span-1 number rounded-b border-x border-b">0</div>
                     <div class="col-span-1"></div>
-                    <div onclick="calculate()" class="col-span-1 py-5 transition rounded-xl bg-gray-500 text-white equal rounded-b-xl cursor-pointer hover:rounded-xl hover:opacity-80">=</div>
+                    <div onclick="operate(this)" class="operation rounded-b-xl border-l border-b">÷</div>
+                    <div onclick="calculate()" class="col-span-4 mt-4 py-5 transition rounded-xl bg-gray-500 text-white equal rounded-b-xl cursor-pointer hover:rounded-xl hover:opacity-80">=</div>
                 </div>
             </div>
 

@@ -27,7 +27,7 @@ class CalculatorController extends Controller
 
         // Decide which operation to execute
         switch ($operation) {
-            case '+' :
+            case '+':
                 $output = $this->executeAddition();
                 break;
             case '–':
@@ -35,6 +35,9 @@ class CalculatorController extends Controller
                 break;
             case 'x':
                 $output = $this->executeMultiplication();
+                break;
+            case '÷':
+                $output = $this->executeDivision();
                 break;
             default:
                 $output = 0.00;
@@ -91,5 +94,15 @@ class CalculatorController extends Controller
     public function executeMultiplication()
     {
         return $this->firstNumber * $this->secondNumber;
+    }
+
+    /**
+     * Execute the division operation
+     *
+     * @return float|int
+     */
+    public function executeDivision()
+    {
+        return $this->firstNumber / $this->secondNumber;
     }
 }
