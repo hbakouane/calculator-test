@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#blocks div {
+    @apply py-5;
+}
+
+.number {
+    @apply bg-gray-100 text-gray-700 font-bold transition hover:bg-gray-200 cursor-pointer;
+}
+
+.operation {
+    @apply text-gray-700 bg-white hover:bg-gray-100 transition cursor-pointer;
+}
+
+#logs {
+    @apply h-full rounded-tl-xl rounded-bl-xl fixed right-0 bg-gray-500 top-0 transition;
+    width: 0%;
+    transition: .7s;
+}
